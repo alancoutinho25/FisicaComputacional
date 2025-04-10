@@ -1,6 +1,10 @@
 # Atividade 1
 
-Na atividade 1 é necessário ajustar a taxa de aprendizado $\alpha$ de modo que seja possível visualizar uma trajetória em que os valores de x oscilem de ambos os "lados" da parábola. Se a taxa de aprendizado for $\alpha<0,9$ e $x_0>0$, a convergência ocorre lentamente somente do "lado positivo" ou do lado direito da parábola até o mínimo. Se a $\alpha<0.1$ a convergência não atinge o mínimo global. Por outro lado, se $x_0<0$ a convergência ocorre pelo lado esquerdo ou negativo.
+No exercício 1 ao ajustar a taxa de aprendizado $\alpha=0,9$ nota-se que a convergência até o mínimo é lenta e a trajetória dos pontos $x_n$ oscila entre os dois lados da parábola. Com esse parâmetro é possível uma melhor visualização do método do Gradiente Divergente, no sentido de que se percebe a oscilação dos valores de $f(x_n)$ até se obter o mínimo.
+
+![download](https://github.com/user-attachments/assets/ed655683-639b-447c-b59e-ed6256df29d8)
+
+Observa-se que quando $\alpha= 0.5$ a convergência ocorre rapidamente para o mínimo. de modo que seja possível visualizar uma trajetória em que os valores de x oscilem de ambos os "lados" da parábola. Se a taxa de aprendizado for $\alpha<0,9$ e $x_0>0$, a convergência ocorre lentamente somente do "lado positivo" ou do lado direito da parábola até o mínimo. Se a $\alpha<0.1$ a convergência não atinge o mínimo global. Por outro lado, se $x_0<0$ a convergência ocorre pelo lado esquerdo ou negativo.
 
 ![download](https://github.com/user-attachments/assets/4f3fb2f0-e36f-4508-bd89-96b118b6a55c)
 
@@ -11,6 +15,7 @@ Na atividade 1 é necessário ajustar a taxa de aprendizado $\alpha$ de modo que
 
 ![download](https://github.com/user-attachments/assets/653c18aa-8685-453e-9b6f-8b18384b9519)
 
+![download](https://github.com/user-attachments/assets/2c7d08eb-eaec-4357-886e-33b2493a898a)
 
 
 Para a taxa de aprenddizado $\alpha>0.9$ a convergência também ocorre de apenas um dos lados da parábola (dependendo do sinal de $x_0$) mas de forma muito mais rápida.
