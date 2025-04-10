@@ -1,6 +1,8 @@
 # Atividade 1
 
 Na atividade 1 é necessário ajustar a taxa de aprendizado $\alpha$ de modo que seja possível visualizar uma trajetória em que os valores de x oscilem de ambos os "lados" da parábola. Se a taxa de aprendizado for $\alpha<0,9$ e $x_0>0$, a convergência ocorre lentamente somente do "lado positivo" ou do lado direito da parábola até o mínimo. Se a $\alpha<0.1$ a convergência não atinge o mínimo global. Por outro lado, se $x_0<0$ a convergência ocorre pelo lado esquerdo ou negativo.
+![download](https://github.com/user-attachments/assets/32bddeda-9672-47c9-a608-74cbbbf003da)
+
 
 Para a taxa de aprenddizado $\alpha>0.9$ a convergência também ocorre de apenas um dos lados da parábola (dependendo do sinal de $x_0$) mas de forma muito mais rápida.
 
