@@ -1,4 +1,4 @@
-#### Repositório do curso de Física Computacional do programa de pós-graduação em Física do Instituto de Física da Universidade Federal de Uberlândia, ministrada pelo Pr. Dr. Gerson Ferreira durante o 1º semestre do ano de 2025.
+#### Repositório do curso de Física Computacional do programa de pós-graduação em Física do Instituto de Física da Universidade Federal de Uberlândia, ministrada pelo Prof. Dr. Gerson Ferreira durante o 1º semestre do ano de 2025.
 
 ---
 
