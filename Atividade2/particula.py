@@ -28,7 +28,7 @@ class Particula:
     self.x += self.vx*dt
     self.y += self.vy*dt
 
-    return self.vx, self.vy, self.x, self.y
+    return self.x, self.y, self.vx, self.vy
 
 p = Particula(0,0,10,10,1)
 
