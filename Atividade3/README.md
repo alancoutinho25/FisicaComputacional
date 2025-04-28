@@ -54,6 +54,28 @@ erros calculados pela função de perda são usados para atualização dos pesos
 Finalmente usamos o model.eval() que faz predições dos valores para um intervalo escolhido. Verificamos que a rede foi treinada no intervalo de $0$ a $4\pi$, mas as predições foram
 feitas no intervalo de $0$ a $6\pi$ e o gráfico mostra que após $4\pi$ a previsão da rede começa a estrapolar (desviar significativamente).
 
+Fiz o treinamento para cosseno. No mesmo intervalo a precisão nas previsões não se mostrou tão eficiente quanto para função seno.
+
+![download](https://github.com/user-attachments/assets/5a51dcb8-1b59-4016-b35a-18499e5804bc)
+
+Aumentei o número de epochs para $50000$ e o resultado se mostrou um pouco melhor.
+
+![download](https://github.com/user-attachments/assets/266cb515-0b21-406c-81ef-b92c774fdabd)
+
+Já a função $\dfrac{sin(x)}{x}$ apresentou os seguintes resultados para $50000$ epochs:
+
+![download](https://github.com/user-attachments/assets/b4858b55-6af5-4641-a377-2451567d66d3)
+
+e para $5000$ epochs não mostrou muita diferença:
+
+![download](https://github.com/user-attachments/assets/c8123e10-6c12-428f-8020-35325a953ca3)
+
+Mas o resultado fica muito melhor quando criamos uma nova camada na rede, ou seja, fazemos a rede do tipo model = nnfs(hidden_layers=[10,10,10,10]):
+
+![download](https://github.com/user-attachments/assets/ca8ff861-fbb1-4dd4-a68f-6eda8d289708)
+
+Então, manipulando o número de epochs para minimização dos erros na fase de treinamento ou o número de camadas da rede, conseguimos otimizar as previsões.
+
 ---
 
 #### Derivadas
