@@ -81,3 +81,13 @@ Então, manipulando o número de epochs para minimização dos erros na fase de 
 #### Derivadas
 
 ---
+Para a derivada de funções, a rede apresentou resultados significativamente diferentes do esperado, como pode ser visto para as funções $sen(x)$ e $cos^2(x)$.
+
+![download](https://github.com/user-attachments/assets/6b8a7687-7716-4927-9650-1edf0df6b979)
+
+![download](https://github.com/user-attachments/assets/eafca85c-5c70-400c-8433-4040bdc43531)
+
+Mesmo tendo aumentado o número de iterações (epochs), número de camadas e número de neurônios em cada camada, os resultados não foram tão diferentes. Além disso, 
+modificamos também o grau dos polinômios para tentar otitimizar os resultados a partir do treinamento da rede, mas para evitar que ocorresse uma divergência rápida
+para termos de ordem superior a 5, usamos polinômios de ordem até 5.
+
