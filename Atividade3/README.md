@@ -81,13 +81,12 @@ Então, manipulando o número de epochs para minimização dos erros na fase de 
 #### Derivadas
 
 ---
-Para a derivada de funções, a rede apresentou resultados significativamente diferentes do esperado, como pode ser visto para as funções $sen(x)$ e $cos^2(x)$.
+Para a derivada de funções, usamos a biblioteca sklearn e criamos um modelo que treina polinômios para tentar aprender a derivada de funções trigonométricas. Foram feitos 3 testes: com a função seno, cosseno e $x^2$. 
+Variamos o número de polinômios utilizados no treinamento, e o grau destes para tentar obter resultados significativos. Usando 20.000 polinômios de grau 4, observando que no intervalo $-\frac{\pi}{2}<x<\frac{\pi}{2}$ a função seno se assemelha a um polinômio de grau 3, todos com paridade bem definida, ou seja $f(x)=f(-x)$ para as raízes, num intervalo
+em que $-1<x<1$ obtemos os seguintes resultados:
 
-![download](https://github.com/user-attachments/assets/6b8a7687-7716-4927-9650-1edf0df6b979)
+![download](https://github.com/user-attachments/assets/b12fcaf1-8771-49cf-aaa2-5dfad69743b4)
 
-![download](https://github.com/user-attachments/assets/eafca85c-5c70-400c-8433-4040bdc43531)
+Para a função cosseno, vimos que o modelo descreveu o resultado da derivada apenas no intervalo de $x=0,35$ a $x=0,7$. Nos demais casos o resultado não foi satisfatório.
 
-Mesmo tendo aumentado o número de iterações (epochs), número de camadas e número de neurônios em cada camada, os resultados não foram tão diferentes. Além disso, 
-modificamos também o grau dos polinômios para tentar otitimizar os resultados a partir do treinamento da rede, mas para evitar que ocorresse uma divergência rápida
-para termos de ordem superior a 5, usamos polinômios de ordem até 5.
 
