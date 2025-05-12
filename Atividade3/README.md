@@ -82,7 +82,7 @@ Então, manipulando o número de epochs para minimização dos erros na fase de 
 
 ---
 Para a derivada de funções, usamos a biblioteca sklearn e criamos um modelo que treina polinômios para tentar aprender a derivada de funções trigonométricas. Foram feitos 3 testes: com a função seno, cosseno e $x^2$. 
-Variamos o número de polinômios utilizados no treinamento, e o grau destes para tentar obter resultados significativos. Usando 10.000 polinômios de grau 4, observando que no intervalo $-\frac{\pi}{2}<x<\frac{\pi}{2}$ a função seno se assemelha a um polinômio de grau 3, todos com paridade bem definida, ou seja $f(x)=f(-x)$ para as raízes, num intervalo
+Variamos o número de polinômios utilizados no treinamento, e o grau destes para tentar obter resultados significativos. Usando 10.000 polinômios de grau 10, todos com paridade bem definida, ou seja $f(x)=f(-x)$ para as raízes, num intervalo
 em que $-\frac{1}{2}<x<\frac{1}{2}$ obtemos os seguintes resultados:
 
 ![download](https://github.com/user-attachments/assets/1d678c9a-36b2-4de8-8957-1b24143d2751)
