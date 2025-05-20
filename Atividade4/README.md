@@ -28,3 +28,20 @@ O modelo descreveu os dados de forma satisfatória, mas quando tentamos extrapol
 ficou comprovada a necessidade de adaptação da rede.
 
 #### Implementação da PINN
+
+----
+
+Uma PINN (Physics-Informed Neural Network) é uma rede neural que, além de aprender com dados, é treinada para satisfazer a equação diferencial do sistema. No nosso caso, a equação de resfriamento de Newton:
+
+$$ \dfrac{dT(t)}{dt} = r\cdot (T_a - T(t)) $$
+
+A principal modificação introduzida por uma PINN é a adição de um termo de perda extra, chamado de perda física ou loss_physics, que mede o erro entre o lado esquerdo e o lado direito da equação diferencial.
+O PyTorch permite calcular derivadas automaticamente com torch.autograd.grad. Isso é fundamental para PINNs, pois permite calcular: $\dfrac{dT}{dt}$, onde $T(t)$ é a predição da rede.
+
+Para isso, usamos: 
+
+dT_dt = torch.autograd.grad(T_pred, t_input, grad_outputs=torch.ones_like(T_pred), create_graph=True)[0]
+
+Essa linha faz com que o PyTorch calcule a derivada de T_pred com relação a t_input, mantendo o grafo computacional (para futuras derivadas se necessário).
+
+Com isso a rede foi capaz de extrapolar os dados, obedecendo às condições de contorno e ao comportamento da equação diferencial proposta.
