@@ -45,3 +45,6 @@ dT_dt = torch.autograd.grad(T_pred, t_input, grad_outputs=torch.ones_like(T_pred
 Essa linha faz com que o PyTorch calcule a derivada de T_pred com relação a t_input, mantendo o grafo computacional (para futuras derivadas se necessário).
 
 Com isso a rede foi capaz de extrapolar os dados, obedecendo às condições de contorno e ao comportamento da equação diferencial proposta.
+
+![download](https://github.com/user-attachments/assets/4d4d6976-4c79-4100-bed9-8093da6bd92a)
+
