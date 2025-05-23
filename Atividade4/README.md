@@ -46,5 +46,6 @@ Essa linha faz com que o PyTorch calcule a derivada de T_pred com relação a t_
 
 Com isso a rede foi capaz de extrapolar os dados, obedecendo às condições de contorno e ao comportamento da equação diferencial proposta.
 
-![download](https://github.com/user-attachments/assets/4d4d6976-4c79-4100-bed9-8093da6bd92a)
+![download](https://github.com/user-attachments/assets/e51ef022-f17a-4883-aa08-44886cf63104)
+
 
