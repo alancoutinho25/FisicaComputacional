@@ -48,4 +48,6 @@ Com isso a rede foi capaz de extrapolar os dados, obedecendo às condições de 
 
 ![download](https://github.com/user-attachments/assets/e51ef022-f17a-4883-aa08-44886cf63104)
 
+A pinn também foi capaz de prever a taxa de resfriamento, isto é, foi treinada para, a partir da solução aproximada, encontrar a taxa de resfriamento correspondente.
+
 
