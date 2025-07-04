@@ -1,1 +1,0 @@
-### Bandas de Energia 
